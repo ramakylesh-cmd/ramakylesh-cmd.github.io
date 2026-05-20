@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akylesh Ram — Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11pt;
+    color: #1a1a1a;
+    background: #f5f5f0;
+    padding: 40px 20px;
+  }
+
+  .page {
+    background: #ffffff;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 52px 56px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.10);
+  }
+
+  /* HEADER */
+  .header { border-bottom: 2.5px solid #1a1a1a; padding-bottom: 18px; margin-bottom: 22px; }
+  .name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 26pt;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    color: #111;
+  }
+  .title-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9pt;
+    color: #555;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 14px;
+  }
+  .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .contact-line span { display: flex; align-items: center; gap: 5px; }
+  .contact-line a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #bbb; }
+  .dot { color: #bbb; }
+
+  /* SECTIONS */
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #111;
+    border-bottom: 1.5px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 13px;
+  }
+
+  /* OBJECTIVE */
+  .objective p {
+    font-size: 10.5pt;
+    line-height: 1.65;
+    color: #333;
+    font-weight: 300;
+  }
+
+  /* EDUCATION */
+  .edu-block { display: flex; justify-content: space-between; align-items: flex-start; }
+  .edu-left .institution { font-weight: 600; font-size: 11pt; }
+  .edu-left .degree { font-size: 10.5pt; color: #444; margin-top: 2px; }
+  .edu-right { text-align: right; font-size: 10pt; color: #555; font-family: 'IBM Plex Mono', monospace; font-size: 9pt; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: 140px 1fr; gap: 7px 0; }
+  .skill-cat { font-size: 10pt; font-weight: 600; color: #333; padding-top: 1px; }
+  .skill-val { font-size: 10pt; color: #444; line-height: 1.5; }
+
+  /* PROJECTS */
+  .project { margin-bottom: 16px; }
+  .project:last-child { margin-bottom: 0; }
+  .project-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+  .project-name { font-weight: 600; font-size: 11pt; color: #111; }
+  .project-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8.5pt;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .project-stack {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8.5pt;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  .project ul { padding-left: 16px; }
+  .project ul li {
+    font-size: 10.5pt;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1px;
+  }
+
+  /* CERTIFICATES */
+  .cert-block { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+  .cert-name { font-size: 10.5pt; font-weight: 500; }
+  .cert-issuer { font-size: 10pt; color: #555; }
+  .cert-date { font-family: 'IBM Plex Mono', monospace; font-size: 9pt; color: #888; }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; padding: 36px 44px; }
+    a { color: #1a1a1a !important; }
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 28px 20px; }
+    .edu-block, .project-header, .cert-block { flex-direction: column; gap: 2px; }
+    .edu-right { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">Akylesh Ram</div>
+    <div class="title-tag">ECE Undergraduate · AI & Web Development</div>
+    <div class="contact-line">
+      <span>📍 Chennai, Tamil Nadu</span>
+      <span class="dot">·</span>
+      <span>📧 <a href="mailto:ramakylesh@gmail.com">ramakylesh@gmail.com</a></span>
+      <span class="dot">·</span>
+      <span>🔗 <a href="https://www.linkedin.com/in/akylesh-ram-168713214">linkedin.com/in/akylesh-ram</a></span>
+      <span class="dot">·</span>
+      <span>💻 <a href="https://github.com/ramakylesh-cmd">github.com/ramakylesh-cmd</a></span>
+    </div>
+  </div>
+
+  <!-- OBJECTIVE -->
+  <div class="section objective">
+    <div class="section-title">Objective</div>
+    <p>
+      Electronics and Communication Engineering undergraduate passionate about AI, full-stack development, and building real-world technology solutions. Experienced in developing and deploying AI-powered web applications with modern cloud infrastructure. Seeking an internship to apply practical skills, contribute to meaningful projects, and grow within a dynamic engineering team.
+    </p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-block">
+      <div class="edu-left">
+        <div class="institution">SRM Institute of Science and Technology</div>
+        <div class="degree">B.Tech — Electronics and Communication Engineering (ECE)</div>
+      </div>
+      <div class="edu-right">
+        <div>Chennai, Tamil Nadu</div>
+        <div>2024 – 2028</div>
+        <div>2nd Year</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-cat">Languages</div>
+      <div class="skill-val">Python, JavaScript (ES6+), HTML5, CSS3, SQL</div>
+
+      <div class="skill-cat">Frameworks</div>
+      <div class="skill-val">Flask, TensorFlow.js, Teachable Machine</div>
+
+      <div class="skill-cat">Cloud & DB</div>
+      <div class="skill-val">Supabase (PostgreSQL), Vercel, Git & GitHub</div>
+
+      <div class="skill-cat">APIs & Tools</div>
+      <div class="skill-val">Groq API (Llama LLM), OpenWeatherMap, Google OAuth 2.0</div>
+
+      <div class="skill-cat">Concepts</div>
+      <div class="skill-val">Machine Learning Basics, REST APIs, PWA, AI-Assisted Development</div>
+
+      <div class="skill-cat">Soft Skills</div>
+      <div class="skill-val">Problem Solving, Fast Learning, Team Collaboration</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">AgriShield AI — Crop Disease Detection Platform</span>
+        <a class="project-link" href="https://github.com/ramakylesh-cmd/AGRISHIELD-AI">github.com/ramakylesh-cmd/AGRISHIELD-AI</a>
+      </div>
+      <div class="project-stack">Python · Flask · TensorFlow.js · Groq (Llama) · Supabase · OpenWeatherMap · Google OAuth · PWA</div>
+      <ul>
+        <li>Built a full-stack AI web application for real-time crop disease detection using image classification (TensorFlow.js + Teachable Machine), deployed on Vercel with serverless Flask backend</li>
+        <li>Integrated Groq LLM (Llama 3) to generate detailed diagnosis reports with organic and chemical treatment recommendations, achieving context-aware advice based on live weather data</li>
+        <li>Implemented multilingual Farmer Mode supporting Tamil, Hindi, Telugu, Kannada, Malayalam, and English with voice input interface for rural accessibility</li>
+        <li>Configured Supabase PostgreSQL for user data and scan history storage with Google OAuth 2.0 and email authentication; shipped as an installable PWA with offline ML support</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">RoadSense AI — Road Safety Intelligence App</span>
+        <a class="project-link" href="https://github.com/ramakylesh-cmd/roadsense-ai">github.com/ramakylesh-cmd/roadsense-ai</a>
+      </div>
+      <div class="project-stack">Python · JavaScript · AI APIs · Web Technologies</div>
+      <ul>
+        <li>Developed an AI-powered road safety application providing intelligent driving insights and hazard detection</li>
+        <li>Integrated AI APIs for real-time analysis and recommendations to improve road safety outcomes</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Calorie Tracker — AI Nutrition Assistant</span>
+        <a class="project-link" href="https://github.com/ramakylesh-cmd/CALORIE-TRACKER">github.com/ramakylesh-cmd/CALORIE-TRACKER</a>
+      </div>
+      <div class="project-stack">Python · JavaScript · HTML · CSS · AI Integration</div>
+      <ul>
+        <li>Built a nutrition tracking application with AI-powered food recognition and calorie estimation</li>
+        <li>Implemented user dashboard for daily intake monitoring and dietary goal tracking</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Habit Tracker — Productivity Application</span>
+        <a class="project-link" href="https://github.com/ramakylesh-cmd/habit-tracker-app">github.com/ramakylesh-cmd/habit-tracker-app</a>
+      </div>
+      <div class="project-stack">JavaScript · HTML · CSS · Local Storage</div>
+      <ul>
+        <li>Developed a habit tracking web application with streak monitoring, daily check-ins, and progress visualization</li>
+        <li>Designed clean, responsive UI with persistent local data storage for uninterrupted user experience</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-block">
+      <div>
+        <div class="cert-name">IoT-Network Specialist Certificate Programme</div>
+        <div class="cert-issuer">Reliance Foundation Skilling Academy · Skill India Digital (Gov. of India)</div>
+      </div>
+      <div class="cert-date">May 2026</div>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section">
+    <div class="section-title">Activities & Interests</div>
+    <ul style="padding-left:16px;">
+      <li style="font-size:10.5pt;color:#333;line-height:1.7;">Participated in AI and sustainability-focused hackathons; built AgriShield AI as a hackathon project addressing real agricultural challenges</li>
+      <li style="font-size:10.5pt;color:#333;line-height:1.7;">Actively learning full-stack development and AI engineering through self-directed project building</li>
+      <li style="font-size:10.5pt;color:#333;line-height:1.7;">Interests: Artificial Intelligence, IoT Systems, AgriTech, Cloud Infrastructure, Product Development</li>
+    </ul>
+  </div>
+
+</div>
+
+<div style="text-align:center;margin-top:20px;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#aaa;">
+  To save as PDF → Press Ctrl+P (or Cmd+P) → Save as PDF → Set margins to None
+</div>
+
+</body>
+</html>
